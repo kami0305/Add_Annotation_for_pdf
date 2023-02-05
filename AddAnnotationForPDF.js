@@ -2,6 +2,7 @@
     () => {
 
         const DocNumber = "hoge-99999";
+        const mojiSize = 24
 
         const doc = this;
 
@@ -31,7 +32,7 @@
             const spans = new Array();
             spans[0] = new Object();
             spans[0].textColor = color.black;
-            spans[0].textSize = 12;
+            spans[0].textSize = mojiSize;
             spans[0].text = DocNumber + " ( " + (pageNum + 1) + " / " + pageNums.length + " )";
 
             const annotFreeText = addAnnot({
